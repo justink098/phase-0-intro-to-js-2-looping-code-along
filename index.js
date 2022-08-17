@@ -1,9 +1,25 @@
-Cards = (["Sam", "Brenda", "Ada" ,"Ali"]);
-function wrapGifts(Cards) {
-    for (let i = 0; i < Cards.length; i++) {
-      console.log(`Thank you, ${Cards[i]}, for the wonderful birthday gift!`);
+//const names = [];
+//onst suprise = 'suprise';
+
+
+
+function writeCards(names,suprise){
+    let thankYouCards = [];
+    for(name of names){
+        let msg=  `Thank you, ${name}, for the wonderful ${suprise} gift!`;
+        thankYouCards.push(msg);
     }
-    return Cards;
-    
-  }
-  wrapGifts(Cards);// Code your solutions in this file
+//console.log(thankYouCards);
+return thankYouCards;
+}
+console.log(writeCards([" Guadalupe","Ollie", "Aki"], "surprise"));
+
+
+function countDown(number){
+    let countDown=10;
+    while(countDown>=-0){
+        console.log(countDown--);
+    }
+}
+
+module.exports={writeCards , countDown}
