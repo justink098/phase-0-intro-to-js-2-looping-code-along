@@ -5,7 +5,7 @@
 
 function writeCards(names,suprise){
     let thankYouCards = [];
-    for(name of names){
+    for(const name of names){
         let msg=  `Thank you, ${name}, for the wonderful ${suprise} gift!`;
         thankYouCards.push(msg);
     }
